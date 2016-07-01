@@ -2489,6 +2489,13 @@ li.template-bullet:before
 	margin-left: -30px;
 	vertical-align: text-top;
 }
+li.template-icon:before
+{
+	color: #ffb74d;
+	padding-right: 15px;
+	margin-left: -30px;
+	vertical-align: text-top;
+}
 li.template-arrow-menu:before
 {
 	color: #ffb74d;

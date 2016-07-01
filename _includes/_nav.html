@@ -22,16 +22,6 @@
         SERVICES
       </a>
       <ul>
-        <li class="{% if page.url contains 'repairs' %} selected {% endif %}">
-          <a href="{{site.baseurl}}/services/repairs/" title="Repairs">
-            Repairs
-          </a>
-        </li>
-        <li class="{% if page.url contains 'installations' %} selected {% endif %}">
-          <a href="{{site.baseurl}}/services/installations/" title="Installations">
-            Installations
-          </a>
-        </li>
         <li class="{% if page.url contains 'services' %} selected {% endif %}">
           <a href="{{site.baseurl}}/services/" title="Services Style 1">
             Services Style 1
@@ -43,6 +33,16 @@
           </a>
         </li>
       </ul>
+    </li>
+    <li class="{% if page.url contains 'installations' %} selected {% endif %}">
+      <a href="{{site.baseurl}}/services/installations/" title="Installations">
+        INSTALLATIONS
+      </a>
+    </li>
+    <li class="{% if page.url contains 'repairs' %} selected {% endif %}">
+      <a href="{{site.baseurl}}/services/repairs/" title="Repairs">
+        REPAIRS
+      </a>
     </li>
     <li class="{% if page.url contains 'products' %} selected {% endif %}">
       <a href="{{site.baseurl}}/products/" title="Products">
