@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>Products</h1>
+
+<ul>
+  {% for product in site.pages %}
+    {% if product.type == 'product' %}
+      <li><a href="{{product.url}}">{{ product.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>{% if page.title %}{{page.title}} - {% endif %}Curtis' Garage Doors {% if page.titleAfter %} - {{page.titleAfter}} {% endif %}</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/css/common.css" media="screen" title="no title" charset="utf-8">
+  <meta name="description" content="{{page.meta}}">
 </head>
 <body>
+
   <header>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/">home</a></li>
-        <li><a href="{{site.baseurl}}/about.html">about</a></li>
-      </ul>
-    </nav>
+    {% include _nav.html %}
   </header>
+
   {{content}}
+
+  <footer>
+    {% include _nav.html %}
+  </footer>
 </body>
 </html>
