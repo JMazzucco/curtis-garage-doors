@@ -1,45 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{% if page.title %}{{page.title}} - {% endif %}Curtis' Garage Doors {% if page.titleAfter %} - {{page.titleAfter}} {% endif %}</title>
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/rs-plugin-settings.css" media="screen" />
-  <link href='//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
-  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css" media="screen" title="no title" charset="utf-8">
-  <meta name="description" content="{{page.meta}}">
-</head>
-<body>
-  <div class="site-container">
-
-    <!--<div class="header-container sticky">-->
-    <div class="header-container">
-      <div class="vertical-align-table column-1-1">
-        <div class="header clearfix">
-          <div class="logo vertical-align-cell">
-            <h1><a href="index.html" title="Renovate">CURTIS</a></h1>
-          </div>
-          <a href="#" class="mobile-menu-switch vertical-align-cell">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </a>
-          <div class="menu-container clearfix vertical-align-cell">
-            {% include _nav.html %}
-            {% include _mobile-nav.html%}
-          </div>
-        </div>
-      </div>
-    </div>
-
-
+---
+layout: base
+---
+<div class="theme-page padding-bottom-66">
+	<div class="clearfix">
     {{content}}
-
-    {% include _footer.html %}
-
-    <a href="#top" class="scroll-top animated-element template-arrow-up" title="Scroll to top"></a>
-    
   </div>
-  {% include scripts.html %}
-</body>
-</html>
+</div>
