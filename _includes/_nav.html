@@ -1,148 +1,63 @@
-<!--<div class="header-container sticky">-->
-<div class="header-container">
-  <div class="vertical-align-table column-1-1">
-    <div class="header clearfix">
-      <div class="logo vertical-align-cell">
-        <h1><a href="index.html" title="Renovate">CURTIS</a></h1>
-      </div>
-      <a href="#" class="mobile-menu-switch vertical-align-cell">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+<nav>
+  <ul class="sf-menu">
+    <li class="{% if page.url == '/' %} selected {% endif %}">
+      <a href="{{site.baseurl}}/" title="Home">
+        HOME
       </a>
-      <div class="menu-container clearfix vertical-align-cell">
-        <nav>
-          <ul class="sf-menu">
-            <li class="selected">
-              <a href="index.html" title="Home">
-                HOME
-              </a>
-              <ul>
-                <li class="selected">
-                  <a href="index.html" title="Home Style 1">
-                    Home Style 1
-                  </a>
-                </li>
-                <li>
-                  <a href="home2.html" title="Home Style 2">
-                    Home Style 2
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="services.html" title="Services">
-                SERVICES
-              </a>
-              <ul>
-                <li>
-                  <a href="repairs.html" title="Repairs">
-                    Repairs
-                  </a>
-                </li>
-                <li>
-                  <a href="installations.html" title="Installations">
-                    Installations
-                  </a>
-                </li>
-                <li>
-                  <a href="services.html" title="Services Style 1">
-                    Services Style 1
-                  </a>
-                </li>
-                <li>
-                  <a href="services2.html" title="Services Style 2">
-                    Services Style 2
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="products.html" title="Products">
-                PRODUCTS
-              </a>
-            </li>
-            <li>
-              <a href="about.html" title="About">
-                ABOUT
-              </a>
-            </li>
-            <li>
-              <a href="contact.html" title="Contact">
-                CONTACT
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="mobile-menu-container">
-          <div class="mobile-menu-divider"></div>
-          <nav>
-            <ul class="mobile-menu collapsible-mobile-submenus">
-              <li class="selected">
-                <a href="index.html" title="Home">
-                  HOME
-                </a>
-                <a href="#" class="template-arrow-menu"></a>
-                <ul>
-                  <li class="selected">
-                    <a href="index.html" title="Home Style 1">
-                      Home Style 1
-                    </a>
-                  </li>
-                  <li>
-                    <a href="home2.html" title="Home Style 2">
-                      Home Style 2
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="services.html" title="Services">
-                  SERVICES
-                </a>
-                <a href="#" class="template-arrow-menu"></a>
-                <ul>
-                  <li>
-                    <a href="repairs.html" title="Repairs">
-                      Repairs
-                    </a>
-                  </li>
-                  <li>
-                    <a href="installations.html" title="Installations">
-                      Installations
-                    </a>
-                  </li>
-                  <li>
-                    <a href="services.html" title="Services Style 1">
-                      Services Style 1
-                    </a>
-                  </li>
-                  <li>
-                    <a href="services2.html" title="Services Style 2">
-                      Services Style 2
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="products.html" title="Products">
-                  PRODUCTS
-                </a>
-              </li>
-              <li>
-                <a href="about.html" title="About">
-                  ABOUT
-                </a>
-              </li>
-              <li class="left-flyout">
-                <a href="contact.html" title="Contact">
-                  CONTACT
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      <ul>
+        <li class="{% if page.url == '/' %} selected {% endif %}">
+          <a href="{{site.baseurl}}/" title="Home Style 1">
+            Home Style 1
+          </a>
+        </li>
+        <li class="{% if page.url contains 'home2' %} selected {% endif %}">
+          <a href="{{site.baseurl}}/home2/" title="Home Style 2">
+            Home Style 2
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="{% if page.url contains 'services' %} selected {% endif %}">
+      <a href="{{site.baseurl}}/services/" title="Services">
+        SERVICES
+      </a>
+      <ul>
+        <li class="{% if page.url contains 'repairs' %} selected {% endif %}">
+          <a href="{{site.baseurl}}/repairs/" title="Repairs">
+            Repairs
+          </a>
+        </li>
+        <li class="{% if page.url contains 'installations' %} selected {% endif %}">
+          <a href="{{site.baseurl}}/installations/" title="Installations">
+            Installations
+          </a>
+        </li>
+        <li class="{% if page.url contains 'services' %} selected {% endif %}">
+          <a href="{{site.baseurl}}/services/" title="Services Style 1">
+            Services Style 1
+          </a>
+        </li>
+        <li class="{% if page.url contains 'services2' %} selected {% endif %}">
+          <a href="{{site.baseurl}}/services2/" title="Services Style 2">
+            Services Style 2
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="{% if page.url contains 'products' %} selected {% endif %}">
+      <a href="{{site.baseurl}}/products/" title="Products">
+        PRODUCTS
+      </a>
+    </li>
+    <li class="{% if page.url contains 'about' %} selected {% endif %}">
+      <a href="{{site.baseurl}}/about/" title="About">
+        ABOUT
+      </a>
+    </li>
+    <li class="{% if page.url contains 'contact' %} selected {% endif %}">
+      <a href="{{site.baseurl}}/contact/" title="Contact">
+        CONTACT
+      </a>
+    </li>
+  </ul>
+</nav>

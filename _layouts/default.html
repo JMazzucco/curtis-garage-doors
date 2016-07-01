@@ -12,12 +12,33 @@
 <body>
   <div class="site-container">
 
-
-    {% include _nav.html %}
+    <!--<div class="header-container sticky">-->
+    <div class="header-container">
+      <div class="vertical-align-table column-1-1">
+        <div class="header clearfix">
+          <div class="logo vertical-align-cell">
+            <h1><a href="index.html" title="Renovate">CURTIS</a></h1>
+          </div>
+          <a href="#" class="mobile-menu-switch vertical-align-cell">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </a>
+          <div class="menu-container clearfix vertical-align-cell">
+            {% include _nav.html %}
+            {% include _mobile-nav.html%}
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     {{content}}
 
+    {% include _footer.html %}
+
+    <a href="#top" class="scroll-top animated-element template-arrow-up" title="Scroll to top"></a>
+    
   </div>
   {% include scripts.html %}
 </body>
