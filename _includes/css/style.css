@@ -1718,11 +1718,18 @@ body .type-small .testimonials-list .ornament.empty-circle::before
 /* --- parallax --- */
 .parallax-1
 {
-	background-image: url('../images/samples/1920x1200/image_01.jpg');
+	/*background-image: url('../images/samples/1920x1200/image_01.jpg');*/
+	/*background-image: url('../images/home/wide-garage-doors-1920-1200.jpg');*/
+  /*background-image: url('../images/home/garage-doors-1920-1200-cropped.jpg');*/
+  background-image: url('../images/home/two-car-garage-1920-1200-cropped.jpg');
 }
 .parallax-2
 {
-	background-image: url('../images/samples/1920x1200/image_02.jpg');
+  /*background-image: url('../images/home/wide-garage-doors-1920-1200-overlay.jpg');*/
+  /*background-image: url('../images/home/garage-doors-1920-1200-cropped.jpg');*/
+  background-image: url('../images/home/two-car-garage-1920-1200-cropped.jpg');
+  /*background-image: url('../images/home/man-repairing-garage-door-1920-1200.jpg');*/
+	/*background-image: url('../images/samples/1920x1200/image_02.jpg');*/
 }
 .parallax,
 .parallax h2,
