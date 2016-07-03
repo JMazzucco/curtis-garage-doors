@@ -773,7 +773,8 @@ jQuery(document).ready(function($){
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			streetViewControl: false,
 			mapTypeControl: false,
-			scrollwheel: parseInt($("#map").data("scroll-wheel"), 10),
+			// scrollwheel: parseInt($("#map").data("scroll-wheel"), 10),
+      scrollwheel: false,
 			draggable: parseInt($("#map").data("draggable"), 10),
 			styles: [ { "featureType": "water", "elementType": "geometry", "stylers": [ { "color": "#8ccaf1" } ] },{ "featureType": "poi", "stylers": [ { "visibility": "off" } ] },{ "featureType": "transit", "stylers": [ { "visibility": "off" } ] },{ "featureType": "water", "elementType": "labels", "stylers": [ { "color": "#ffffff" }, { "visibility": "simplified" } ] } ]
 		};
