@@ -6,6 +6,9 @@
 
 @media screen and (max-width:1189px)
 {
+	.shrink-img{
+		width: 100%;
+	}
 	.services-list-fit-to-screen
 	{		margin-left: 0;
 	}

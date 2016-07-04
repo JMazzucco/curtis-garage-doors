@@ -12,66 +12,27 @@ layout: base
     </div>
   </div>
   <div class="clearfix">
-    <div class="row">
-      <ul class="services-list services-list-fit-to-screen clearfix padding-top-70">
-        <li>
-          <a href="{{site.baseurl}}/services/installations">
-            <img src="{{site.baseurl}}/images/services/man-repairing-garage-door.jpg" alt="man repairing garage door">
-          </a>
-          <h4 class="box-header"><a href="{{site.baseurl}}/services/installations">REPAIRS</a></h4>
-          <p>We can help you bring new life to existing rooms and develop unused spaces.</p>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/services/repairs/">
-            <img src="{{site.baseurl}}/images/services/garage-door-install.jpg" alt="image of garage door">
-          </a>
-          <h4 class="box-header"><a href="{{site.baseurl}}/services/repairs/">INSTALLATIONS</a></h4>
-          <p>From initial design and project specification to archieving a high end finish.</p>
-        </li>
-      </ul>
+    <div class="row padding-top-70">
+      <div class="column column-1-2">
+        <a href="{{site.baseurl}}/services/repairs">
+          <img src="{{site.baseurl}}/images/services/repairs/man-repairing-garage-door-480-320.jpg" alt="man repairing garage door">
+        </a>
+        <h4 class="box-header"><a href="{{site.baseurl}}/services/repairs">REPAIRS</a></h4>
+        <p>
+          Tune-ups, parts replacement, or repairs - We can fix any problems in a jiffy!
+        </p>
+      </div>
+      <div class="column column-1-2">
+        <a href="{{site.baseurl}}/services/installations/">
+          <img src="{{site.baseurl}}/images/services/installations/garage-door-closeup-480-320.jpg" alt="image of garage door">
+        </a>
+        <h4 class="box-header"><a href="{{site.baseurl}}/services/installations/">INSTALLATIONS</a></h4>
+        <p>Check out our Garage Doors on offer. We can take care of the installation - Less to worry about for you!</p>
+      </div>
     </div>
 
     <div class="row padding-top-70">
-      <ul class="services-list services-icons services-items-border row clearfix">
-        <li>
-          <a href="{{site.baseurl}}/services/repairs/">
-            <span class="service-icon sl-small-brush-2"></span>
-          </a>
-          <div class="service-content">
-            <h4 class="box-header"><a href="{{site.baseurl}}/services/repairs/">INTERIOR RENOVATION</a></h4>
-            <p>We can help you bring new life to existing rooms and develop unused spaces.</p>
-          </div>
-        </li>
-        <li>
-          <a href="service_design_build.html">
-            <span class="service-icon sl-small-house-2"></span>
-          </a>
-          <div class="service-content">
-            <h4 class="box-header"><a href="service_design_build.html">DESIGN AND BUILD</a></h4>
-            <p>From initial design and project specification to archieving a high end finish.</p>
-          </div>
-        </li>
-      </ul>
-      <ul class="services-list services-icons services-items-border row clearfix margin-top-30">
-        <li>
-          <a href="service_household_repairs.html" title="Household Repairs">
-            <span class="service-icon sl-small-wrench"></span>
-          </a>
-          <div class="service-content">
-            <h4 class="box-header"><a href="service_household_repairs.html" title="Household Repairs">HOUSEHOLD REPAIRS</a></h4>
-            <p>We offer affordable and reliable repairs and improvements to the home.</p>
-          </div>
-        </li>
-        <li>
-          <a href="service_solar_systems.html" title="Solar Systems">
-            <span class="service-icon sl-small-eco"></span>
-          </a>
-          <div class="service-content">
-            <h4 class="box-header"><a href="service_solar_systems.html" title="Solar Systems">SOLAR SYSTEMS</a></h4>
-            <p>Generate cheap, green electricity from sunlight using photovoltaic cells.</p>
-          </div>
-        </li>
-      </ul>
+      {% include _services-list.html %}
     </div>
   </div>
 </div>

@@ -9,19 +9,12 @@ titleAfter: "The Best Value Garage Door option in Toronto"
   <div class="row page-margin-top">
     <div class="column column-1-3">
       <ul class="features-list big">
-        <li class="sl-large-house-1">
+        <li class="sl-large-briefcase">
           <div class="ornament"></div>
           <h4 class="box-header page-margin-top">OVER 40 YEARS IN BUSINESS</h4>
-          <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
-        </li>
-      </ul>
-    </div>
-    <div class="column column-1-3">
-      <ul class="features-list big">
-        <li class="sl-large-eco">
-          <div class="ornament"></div>
-          <h4 class="box-header page-margin-top">TOP QUALITY PARTS AND PRODUCTS</h4>
-          <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+          <p>
+            We have have been leaving happy customers, for repairs or new door installations, for two generations.
+          </p>
         </li>
       </ul>
     </div>
@@ -29,8 +22,17 @@ titleAfter: "The Best Value Garage Door option in Toronto"
       <ul class="features-list big">
         <li class="sl-large-garage">
           <div class="ornament"></div>
+          <h4 class="box-header page-margin-top">TOP QUALITY PARTS AND PRODUCTS</h4>
+          <p>We believe in Quality. Our materials are made to last, so you can worry about more important matters.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="column column-1-3">
+      <ul class="features-list big">
+        <li class="sl-large-team">
+          <div class="ornament"></div>
           <h4 class="box-header page-margin-top">PROFESSIONAL STANDARDS</h4>
-          <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+          <p>{{site.data.content.brand_name}} believes in professional service with a smile. Our customers are important to us, and we strive to bring utmost statisfaction.</p>
         </li>
       </ul>
     </div>
@@ -40,7 +42,7 @@ titleAfter: "The Best Value Garage Door option in Toronto"
 <div class="row gray padding-top-70 full-width page-margin-top-section">
   <div class="row">
     <h2 class="box-header">SEE OUR PRODUCTS</h2>
-    <p class="description align-center">Here are a few of many products we have completed for our customers. We provide a professional service<br>which includes consultation, free estimate, design, supply of materials and installation.</p>
+    <p class="description align-center">Here are a few of many products we have offered for our customers. We provide a professional service<br>which includes a consultation, free estimate, supply of materials, and installation.</p>
   </div>
   <ul class="projects-list clearfix page-margin-top">
     {% include _home-products.html %}
@@ -54,48 +56,8 @@ titleAfter: "The Best Value Garage Door option in Toronto"
 <div class="row full-width page-padding-top-section">
   <div class="row padding-bottom-87">
     <h2 class="box-header">OUR SERVICES</h2>
-    <p class="description align-center">With over 15 years experience and a real focus on customer satisfaction, you can rely on us for your next renovation,<br>driveway sett or home repair. We provide a professional service for private and commercial customers.</p>
-    <ul class="services-list services-icons row clearfix page-margin-top">
-      <li>
-        <a href="service_design_build.html" title="Design and Build">
-          <span class="service-icon sl-small-house-2"></span>
-        </a>
-        <div class="service-content">
-          <h4 class="box-header"><a href="service_design_build.html" title="Design and Build">DESIGN AND BUILD</a></h4>
-          <p>From initial design and project specification to archieving a high end finish.</p>
-        </div>
-      </li>
-      <li>
-        <a href="service_household_repairs.html" title="Household Repairs">
-          <span class="service-icon sl-small-wrench"></span>
-        </a>
-        <div class="service-content">
-          <h4 class="box-header"><a href="service_household_repairs.html" title="Household Repairs">HOUSEHOLD REPAIRS</a></h4>
-          <p>We offer affordable and reliable repairs and improvements to the home.</p>
-        </div>
-      </li>
-    </ul>
-    <ul class="services-list services-icons row clearfix margin-top-30">
-      <li>
-        <a href="service_paver_walkways.html" title="Paver Walkways">
-          <span class="service-icon sl-small-bricks"></span>
-        </a>
-        <div class="service-content">
-          <h4 class="box-header"><a href="service_paver_walkways.html" title="Paver Walkways">PAVER WALKWAYS</a></h4>
-          <p>Brick pavers define beauty, elegance and durability for driveways, patios and walkways.</p>
-        </div>
-      </li>
-      <li>
-        <a href="service_tiling_painting.html" title="Tiling and Painting"><span class="service-icon sl-small-bucket"></span></a>
-        <div class="service-content">
-          <h4 class="box-header"><a href="service_tiling_painting.html" title="Tiling and Painting">TILING AND PAINTING</a></h4>
-          <p>We offer quality tiling and painting solutions for interior and exterior.</p>
-        </div>
-      </li>
-    </ul>
-    <!-- <div class="align-center margin-top-67 padding-bottom-87">
-      <a class="more" href="{{site.baseurl}}/services/" title="VIEW ALL SERVICES">VIEW ALL SERVICES</a>
-    </div> -->
+    <p class="description align-center">With skilled technicians with over 15 years experience in the industry, we will find the exact problem and fix it at the lowest possible cost.<br>We also provide quality customer service as well as offering great value for products and parts.</p>
+    {% include _services-list.html %}
   </div>
 </div>
 
@@ -105,30 +67,21 @@ titleAfter: "The Best Value Garage Door option in Toronto"
     <ul class="testimonials-list">
       <li class="sl-small-conversation">
         <div class="ornament"></div>
-        <p>"We would like to thank Renovate Company for an outstanding effort on this
-        recently completed project located in the Moscow. The project involved a very
-        aggressive schedule and it was completed on time. We would certainly like to
-        use their professional services again."</p>
-        <div class="author">MITCHEL SMITH</div>
-        <div class="author-details">CEO OF NEW PORT COMPANY</div>
+        <p>"{{site.data.content.testimonial1}}"</p>
+        <div class="author">{{site.data.content.testimonial1_author}}</div>
+        <div class="author-details">{{site.data.content.testimonial1_details}}</div>
       </li>
       <li class="sl-small-conversation">
         <div class="ornament"></div>
-        <p>"We would like to thank Renovate Company for an outstanding effort on this
-        recently completed project located in the Moscow. The project involved a very
-        aggressive schedule and it was completed on time. We would certainly like to
-        use their professional services again."</p>
-        <div class="author">MITCHEL SMITH</div>
-        <div class="author-details">CEO OF NEW PORT COMPANY</div>
+        <p>"{{site.data.content.testimonial2}}"</p>
+        <div class="author">{{site.data.content.testimonial2_author}}</div>
+        <div class="author-details">{{site.data.content.testimonial2_details}}</div>
       </li>
       <li class="sl-small-conversation">
         <div class="ornament"></div>
-        <p>"We would like to thank Renovate Company for an outstanding effort on this
-        recently completed project located in the Moscow. The project involved a very
-        aggressive schedule and it was completed on time. We would certainly like to
-        use their professional services again."</p>
-        <div class="author">MITCHEL SMITH</div>
-        <div class="author-details">CEO OF NEW PORT COMPANY</div>
+        <p>"{{site.data.content.testimonial3}}"</p>
+        <div class="author">{{site.data.content.testimonial3_author}}</div>
+        <div class="author-details">{{site.data.content.testimonial3_details}}</div>
       </li>
     </ul>
     <a href="#" class="slider-control right template-arrow-left-1"></a>
