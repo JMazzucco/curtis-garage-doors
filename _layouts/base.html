@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>{% if page.title %}{{page.title}} | {% endif %}{{site.data.content.brand_name}}{% if page.titleAfter %} | {{page.titleAfter}}{% endif %}</title>
   <meta charset="UTF-8">
-  <title>{% if page.title %}{{page.title}} - {% endif %}Curtis' Garage Doors {% if page.titleAfter %} - {{page.titleAfter}} {% endif %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=yes" />
+	<meta name="keywords" content="Garage Doors, Toronto, GTA, Markham, Pickering, Richmond Hill, Garage, Doors" />
+	<meta name="description" content="{% if page.meta %}{{page.meta}}{% else %}{{site.data.content.brand_name}} is the best value source for Garage Door repairs, installations. Servicing the Greater Toronto Area, we've been a family-run business for over 40 years." {% endif %}/>
 
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/rs-plugin/css/settings.css" media="screen" />
 
