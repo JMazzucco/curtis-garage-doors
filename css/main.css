@@ -2,6 +2,7 @@
 
 ---
 
+{% include css/pricing-table.css %}
 {% include css/reset.css %}
 {% include css/superfish.css %}
 {% include css/prettyPhoto.css %}
