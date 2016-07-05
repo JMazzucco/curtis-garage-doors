@@ -65,24 +65,14 @@ titleAfter: "The Best Value Garage Door option in Toronto"
   <div class="row testimonials-container">
     <a href="#" class="slider-control left template-arrow-left-1"></a>
     <ul class="testimonials-list">
-      <li class="sl-small-conversation">
-        <div class="ornament"></div>
-        <p>"{{site.data.content.testimonial1}}"</p>
-        <div class="author">{{site.data.content.testimonial1_author}}</div>
-        <div class="author-details">{{site.data.content.testimonial1_details}}</div>
-      </li>
-      <li class="sl-small-conversation">
-        <div class="ornament"></div>
-        <p>"{{site.data.content.testimonial2}}"</p>
-        <div class="author">{{site.data.content.testimonial2_author}}</div>
-        <div class="author-details">{{site.data.content.testimonial2_details}}</div>
-      </li>
-      <li class="sl-small-conversation">
-        <div class="ornament"></div>
-        <p>"{{site.data.content.testimonial3}}"</p>
-        <div class="author">{{site.data.content.testimonial3_author}}</div>
-        <div class="author-details">{{site.data.content.testimonial3_details}}</div>
-      </li>
+      {% for person in site.data.testimonials %}
+        <li class="sl-small-conversation">
+          <div class="ornament"></div>
+          <p>"{{person.testimonial}}"</p>
+          <div class="author">{{person.author}}</div>
+          <div class="author-details">{{person.info}}</div>
+        </li>
+      {% endfor %}
     </ul>
     <a href="#" class="slider-control right template-arrow-left-1"></a>
   </div>

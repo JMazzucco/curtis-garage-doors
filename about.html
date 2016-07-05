@@ -81,25 +81,16 @@ meta: "Learn about Uptown Doors. Founded by Geroge Scheider in 1971."
 		<div class="row testimonials-container type-small margin-top-40">
 			<div class="re-carousel-pagination"></div>
 			<ul class="testimonials-list autoplay-0 pause_on_hover-1">
+				{% for person in site.data.testimonials %}
 				<li>
-					<p>"{{site.data.content.testimonial1}}"</p>
+					<p>"{{person.testimonial}}"</p>
 					<div class="ornament sl-small-person"></div>
 					<div class="author-details-box">
-						<div class="author">{{site.data.content.testimonial1_author}}</div>
-						<div class="author-details">{{site.data.content.testimonial1_details}}</div>
+						<div class="author">{{person.author}}</div>
+						<div class="author-details">{{person.info}}</div>
 					</div>
 				</li>
-				<li>
-					<p>"We would like to thank Renovate Company for an outstanding effort on this
-					recently completed project located in the Moscow. The project involved a very
-					aggressive schedule and it was completed on time. We would certainly like to
-					use their professional services again."</p>
-					<div class="ornament sl-small-forklift"></div>
-					<div class="author-details-box">
-						<div class="author">DEBORA HILTON</div>
-						<div class="author-details">PAVER WALKWAYS</div>
-					</div>
-				</li>
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
