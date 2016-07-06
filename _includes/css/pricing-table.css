@@ -9,7 +9,7 @@
 }
 /*Only the direct li child, not the .features li*/
 .pricing_table>li {
-  background: #ccc;
+  background: #f1cd86;
 	width: 33.33%;
 	float: left;
 	list-style-type: none;

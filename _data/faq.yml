@@ -1,0 +1,7 @@
+- question: "Why doesn't my door open?"
+  answer: "The usual reasons are a broken <a href='http://www.garage-openers.com/images/torsion-spring.jpg' target='_blank'>spring</a>, a broken cable, or a stripped gear inside your garage door opener."
+  id: "open"
+
+- question: "Why doesn't my door close?"
+  answer: "The usual reasons are because the sensors are misaligned, or a cable or roller is broken. Sometimes all it really needs is a tune-up"
+  id: "close"

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About Us."
+title: "About Us"
 meta: "Learn about Uptown Doors. Founded by Geroge Scheider in 1971."
 
 ---
@@ -8,7 +8,7 @@ meta: "Learn about Uptown Doors. Founded by Geroge Scheider in 1971."
 <div class="row margin-top-70">
 	<div class="column column-1-2 align-center re-preload">
 		<div class="image-wrapper">
-			<img src="{{site.baseurl}}/images/samples/480x480/image_10.jpg" alt="" class="radius">
+			<img src="{{site.baseurl}}/images/curtis-480x2b.jpg" alt="Curtis Schneider standing in front of a garage door." class="radius">
 		</div>
 	</div>
 	<div class="column column-1-2">
@@ -59,7 +59,7 @@ meta: "Learn about Uptown Doors. Founded by Geroge Scheider in 1971."
 			<ul class="features-list big">
 				<li class="sl-large-tick">
 					<div class="ornament"></div>
-					<span class="number animated-element" data-value="6322"></span>
+					<span class="number animated-element" data-value="12322"></span>
 					<p>Satisfied Customers.</p>
 				</li>
 			</ul>
@@ -75,7 +75,7 @@ meta: "Learn about Uptown Doors. Founded by Geroge Scheider in 1971."
 		</div>
 	</div>
 </div>
-<div class="row page-margin-top-section padding-bottom-17">
+<div class="row page-margin-top-section padding-bottom-50">
 	<div class="column column-1-2">
 		<h3 class="box-header">TESTIMONIALS</h3>
 		<div class="row testimonials-container type-small margin-top-40">
@@ -97,96 +97,14 @@ meta: "Learn about Uptown Doors. Founded by Geroge Scheider in 1971."
 	<div class="column column-1-2">
 		<h3 class="box-header">POPULAR QUESTIONS</h3>
 		<ul class="accordion margin-top-40 clearfix">
+			{% for item in site.data.faq %}
 			<li>
-				<div id="accordion-renovation-cost">
-					<h5>Why does a renovation project cost so much?</h5>
+				<div id="accordion-{{item.id}}">
+					<h5>{{item.question}}</h5>
 				</div>
-				<p class="description t1">Paetos dignissim at cursus elefeind norma arcu. Pellentesque accumsan est in tempus etos ullamcorper, sem quam suscipit lacus maecenas tortor. Erates vitae node metus. Suspendisse gravida ornare non mattis velit rutrum modest. Morbi suspendisse a tortor velim pellentesque uter justo magna gravida et maecenas.</p>
+				<p class="description t1">{{item.answer}}</p>
 			</li>
-			<li>
-				<div id="accordion-project-timeline">
-					<h5>What is the timeline for the project?</h5>
-				</div>
-				<p class="description t1">Paetos dignissim at cursus elefeind norma arcu. Pellentesque accumsan est in tempus etos ullamcorper, sem quam suscipit lacus maecenas tortor. Erates vitae node metus. Suspendisse gravida ornare non mattis velit rutrum modest. Morbi suspendisse a tortor velim pellentesque uter justo magna gravida et maecenas.</p>
-			</li>
-			<li>
-				<div id="accordion-construction-budget">
-					<h5>What is the total budget for construction?</h5>
-				</div>
-				<p class="description t1">Paetos dignissim at cursus elefeind norma arcu. Pellentesque accumsan est in tempus etos ullamcorper, sem quam suscipit lacus maecenas tortor. Erates vitae node metus. Suspendisse gravida ornare non mattis velit rutrum modest. Morbi suspendisse a tortor velim pellentesque uter justo magna gravida et maecenas.</p>
-			</li>
-			<li>
-				<div id="accordion-project-initiation">
-					<h5>How is renovation project initiated?</h5>
-				</div>
-				<p class="description t1">Paetos dignissim at cursus elefeind norma arcu. Pellentesque accumsan est in tempus etos ullamcorper, sem quam suscipit lacus maecenas tortor. Erates vitae node metus. Suspendisse gravida ornare non mattis velit rutrum modest. Morbi suspendisse a tortor velim pellentesque uter justo magna gravida et maecenas.</p>
-			</li>
+			{% endfor %}
 		</ul>
-	</div>
-</div>
-
-<div class="row page-margin-top-section">
-
-	<div class="column column-1-1">
-		<h3 class="box-header">WE WORK WITH</h3>
-		<div class="our-clients-list-container margin-top-40 type-list">
-			<ul class="our-clients-list type-list">
-				<li class="vertical-align">
-					<div class="our-clients-item-container">
-						<div class="vertical-align-cell">
-							<a target="_blank" href="http://quanticalabs.com">
-								<img src="{{site.baseurl}}/images/logos/logo_01.png" alt="">
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="vertical-align">
-					<div class="our-clients-item-container">
-						<div class="vertical-align-cell">
-							<a target="_blank" href="http://quanticalabs.com">
-								<img src="{{site.baseurl}}/images/logos/logo_02.png" alt="">
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="vertical-align">
-					<div class="our-clients-item-container">
-						<div class="vertical-align-cell">
-							<a target="_blank" href="http://quanticalabs.com">
-								<img src="{{site.baseurl}}/images/logos/logo_04.png" alt="">
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="vertical-align">
-					<div class="our-clients-item-container">
-						<div class="vertical-align-cell">
-							<a target="_blank" href="http://quanticalabs.com">
-								<img src="{{site.baseurl}}/images/logos/logo_03.png" alt="">
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="vertical-align">
-					<div class="our-clients-item-container">
-						<div class="vertical-align-cell">
-							<a target="_blank" href="http://quanticalabs.com">
-								<img src="{{site.baseurl}}/images/logos/logo_05.png" alt="">
-							</a>
-						</div>
-					</div>
-				</li>
-				<li class="vertical-align">
-					<div class="our-clients-item-container">
-						<div class="vertical-align-cell">
-							<a target="_blank" href="http://quanticalabs.com">
-								<img src="{{site.baseurl}}/images/logos/logo_06.png" alt="">
-							</a>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<div class="re-carousel-pagination"></div>
-		</div>
 	</div>
 </div>
