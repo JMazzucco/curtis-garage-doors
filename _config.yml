@@ -1,3 +1,7 @@
-baseurl: /curtis-garage-doors
+# baseurl: /curtis-garage-doors
 exclude: ['README.md']
 permalink: pretty
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://uptowndoors.ca"
+gems:
+  - jekyll-sitemap
