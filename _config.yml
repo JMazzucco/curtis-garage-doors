@@ -7,3 +7,6 @@ gems:
 
 permalink: pretty
 markdown: kramdown
+
+exclude:
+  - s3_website.yml

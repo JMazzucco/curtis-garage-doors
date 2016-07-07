@@ -43,11 +43,11 @@ meta: Contact Uptown Garage Doors by phone or email and book a consultation toda
     <div class="column column-2-3">
       <div class="contact-map" id="map"></div>
       <h3 id="contact-us" class="box-header page-margin-top">GET IN TOUCH</h3>
-      <form class="contact-form page-margin-top" id="contact-form" method="post" action="contact_form/contact_form.php">
+      <form class="contact-form page-margin-top" id="contact-form" action="https://formspree.io/info@uptowndoors.ca" method="POST">
         <div class="row">
           <fieldset class="column column-1-2">
             <input class="text-input" name="name" type="text" value="Your Name *" placeholder="Your Name *">
-            <input class="text-input" name="email" type="text" value="Your Email *" placeholder="Your Email *">
+            <input class="text-input" name="_replyto" type="email" value="Your Email *" placeholder="Your Email *">
             <input class="text-input" name="phone" type="text" value="Your Phone" placeholder="Your Phone">
           </fieldset>
           <fieldset class="column column-1-2">
@@ -59,7 +59,6 @@ meta: Contact Uptown Garage Doors by phone or email and book a consultation toda
             <p class="description t1">Want a free quote? Enter information about your project, and we'll respond within one business day!</p>
           </div>
           <div class="column column-1-2 align-right">
-            <input type="hidden" name="action" value="contact_form" />
             <input type="submit" name="submit" value="SEND MESSAGE" class="more active">
           </div>
         </div>
