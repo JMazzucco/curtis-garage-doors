@@ -16,3 +16,8 @@
 {% include css/fonts/streamline-large.css %}
 {% include css/fonts/streamline-small.css %}
 {% include css/fonts/template.css %}
+
+
+.navbar-logo{
+  height: 110px;
+}
