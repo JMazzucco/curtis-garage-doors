@@ -9,6 +9,7 @@
 {% include css/jquery.qtip.css %}
 {% include css/style.css %}
 {% include css/animations.css %}
+{% include css/logo.css %}
 {% include css/responsive.css %}
 {% include css/odometer-theme-default.css %}
 {% include css/fonts/social.css %}
